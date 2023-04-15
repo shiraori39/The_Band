@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Band</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
@@ -13,19 +13,19 @@
         <div id="header">
 
             <ul id="nav">
-                <li><a href="">home</a></li>
-                <li><a href="">band</a></li>
-                <li><a href="">tour</a></li>
-                <li><a href="">contact</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#band">band</a></li>
+                <li><a href="#tour">tour</a></li>
+                <li><a href="#contact">contact</a></li>
                 <li>
                     <a href="#">
                         more
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">merchandise</a></li>
-                        <li><a href="">extras</a></li>
-                        <li><a href="">media</a></li>
+                        <li><a href="#">merchandise</a></li>
+                        <li><a href="#">extras</a></li>
+                        <li><a href="#">media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -43,7 +43,7 @@
         
         <div id="content">
             <!-- About -->
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-heading">THE BAND</h2>
                 <p class="section-subheading">We love music</p>
                 <p class="about">
@@ -68,7 +68,7 @@
             </div>
 
             <!-- Tour -->
-            <div class="tour-section">
+            <div id="tour"class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading text-white">TOUR DATES</h2>
                     <p class="section-subheading text-gray">Remember to book your tickets!</p>
@@ -112,15 +112,51 @@
                 </div>
             </div>
             <!-- Contact -->
-            <div class="content-section">
+            <div id="contact"class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-subheading">Fan? Drop a note!</p>
+                <div class="row contact-content">
+                    <div class="col two-col contact-left">
+                        <p><i class="ti-location-pin"></i> Chicago, US</p>
+                        <p><i class="ti-mobile"></i> Phone: +00 151515</p>
+                        <p><i class="ti-email"></i> Email: mail@mail.com</p>
+                    </div>
+                    <div class="col two-col contact-form">
+                        <form action="">
+                            <div class="row ">
+                                <div class="col two-col">
+                                    <input type="text" name="" placeholder="Name" id="" class="form-control">
+                                </div>
+                                <div class="col two-row">
+                                    <input type="email" name="" placeholder="Email" id="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-top">
+                                <div class="col one-col">
+                                    <input type="text" name="" placeholder="Message" id="" class="form-control">
+                                </div>                 
+                            </div>
+                            <input class="contact-send" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
             </div>
-
+            <!-- Map -->
+            <div class="map-section">
+                <img src="./assets/img/map.jpg" alt="" class="">
+            </div>
         </div>
 
-        <div id="footer">
-
+        <div id="footer" class="text-center">
+            <div class="social">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="" >w3.css</a></p>
         </div>
     </div>
     <div class="modal">

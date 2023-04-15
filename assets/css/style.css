@@ -4,8 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+/* common  */
 html{
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 .clear{
@@ -17,7 +18,36 @@ html{
 .text-gray{
     color: #ccc!important;
 }
-
+.text-center{
+    text-align: center !important;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.two-col{
+    width: 50%;
+}
+.one-col{
+    width: 100%;
+}
+.three-col{
+    width: 33.3333%;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.mt-top{
+    margin-top: 8px;
+}
+/*  */
 #header{
     height: 46px;
     background-color: black;
@@ -120,10 +150,6 @@ html{
 #slider .text-content .text-desc{
     margin-top: 15px;
     font-size: 15px;
-}
-
-#content{
-
 }
 
 #content .content-section{
@@ -248,8 +274,59 @@ html{
     background-color: #ccc;
     color: #000;
 }
+.contact-left{
+    font-size: 18px;
+}
+.contact-left i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+    line-height: 1.5px;
+}
+.contact-content{
+    padding: 32px 0;
+}
+.contact-form .form-control{
+    padding: 11px;
+    border: 1px solid #ccc;
+    width: 99%;
+}
+.contact-send{
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    margin: 16px 0;
+    border: none;
+    float: right;
+    margin-right: 15px;
+    cursor:pointer;
+}
+.contact-send:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.map-section img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
 #footer{
-
+    padding: 64px 16px;
+}
+#footer .social{
+    font-size: 24px;
+}
+#footer .social a{
+    text-decoration: none;
+    color: rgba(0,0,0, 0.6);
+}
+#footer .social a:hover{
+    opacity: 0.6;
+}
+#footer p{
+    margin: 15px 0;
+}
+#footer p a{
+    color: #000;
 }
 .modal{
     position: fixed;
