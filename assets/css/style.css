@@ -415,7 +415,7 @@ header.modal-header .ti-bag{
 @keyframes modalFadeIn{
     from{
         opacity: 0;
-        transform: translateY(-200px);
+        transform: translateY(-100px);
     }
     to{
         opacity: 1;
